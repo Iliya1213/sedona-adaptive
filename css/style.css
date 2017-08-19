@@ -1,0 +1,305 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase; }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "PT sans ";
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2"); }
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "PT sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../../fonts/ptsansbold.woff2") format("woff2"); }
+
+.container {
+  width: 320px;
+  max-width: 767px;
+  margin: 0 auto; }
+
+.nav {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.nav__item {
+  font-size: 18px;
+  text-align: center;
+  background: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  width: 100%; }
+
+.nav__link {
+  text-decoration: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-family: pt sans; }
+
+.nav__logo {
+  text-align: center; }
+
+.nav__toggle {
+  position: absolute;
+  right: 11px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  outline: none; }
+
+.closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  right: 9px;
+  bottom: 28px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  -webkit-box-shadow: 0 8.5px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+          box-shadow: 0 8.5px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+  outline: none;
+  border: none; }
+
+.opened .nav__toggle::before,
+.opened .nav__toggle::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  width: 29px;
+  height: 4px;
+  background-color: white; }
+
+.opened .nav__toggle::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.opened .nav__toggle::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.closed .nav__item {
+  display: none; }
+
+.opened .nav__toggle {
+  right: 10px;
+  top: 6px;
+  background-color: #81b3d2; }
+
+.intro {
+  margin-top: -33px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: -224px 0;
+  background-repeat: no-repeat;
+  padding-bottom: 83px;
+  text-align: center;
+  width: 100%;
+  max-width: 767px; }
+
+.intro__text {
+  text-align: center;
+  padding-top: 90px; }
+
+.intro__title {
+  text-align: center; }
+
+.intro__title h1 {
+  font-size: 18px;
+  font-family: "PT sans";
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  line-height: 26px;
+  padding-top: 27px;
+  padding-left: 33px; }
+
+.intro__title p {
+  font-size: 14px;
+  font-family: "PT sans";
+  color: #414141;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center; }
+
+.main-content__blue {
+  margin-top: 27px;
+  padding-top: 27px;
+  text-align: center;
+  background-color: #81b3d2;
+  color: #fff; }
+
+.main-content__blue--title {
+  font-size: 18px;
+  padding-top: 16px;
+  font-family: "PT sans"; }
+
+.main-content__blue--text {
+  line-height: 26px;
+  font-size: 14px;
+  padding: 0 20px;
+  padding-bottom: 29px;
+  margin-bottom: 0; }
+
+.main-content--image {
+  margin: 0; }
+
+.main-content--image img {
+  background-position: 10px 10px; }
+
+.content-advantages {
+  margin-bottom: 44px; }
+
+.content-advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.content-advantages__item {
+  margin-left: 70px;
+  padding-top: 19px;
+  position: relative; }
+
+.content-advantages--title {
+  font-family: "pt sans";
+  font-size: 18px; }
+
+.content-advantages--text {
+  font-family: normal;
+  color: #696969;
+  margin: 0; }
+
+.content-advantages__item--icon {
+  position: absolute;
+  left: -51px;
+  top: 25px; }
+
+.reason {
+  padding-top: 7px;
+  text-align: center;
+  background-color: #eeeeee;
+  color: black;
+  margin-top: -5px; }
+
+.reason__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.reason__item--title {
+  font-size: 18px;
+  padding-top: 17px;
+  font-family: "PT sans";
+  margin: 0; }
+
+.reason__list--number {
+  margin: 0; }
+
+.reason__item--text {
+  line-height: 26px;
+  font-size: 14px;
+  padding: 0 20px;
+  padding-bottom: 29px;
+  margin-bottom: 0;
+  position: relative; }
+
+.reason__item--text::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  left: 20px;
+  bottom: 0; }
+
+.interested {
+  text-align: center;
+  margin-bottom: 66px; }
+
+.interested--title {
+  font-family: "PT sans";
+  font-size: 21px;
+  padding-top: 11px; }
+
+.interesed--text {
+  padding: 0 25px;
+  line-height: 2;
+  font-size: 13px;
+  margin-bottom: 48px; }
+
+.interesed--link {
+  font-family: "PT sans";
+  font-size: 21px;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #fff;
+  padding: 15px 47px;
+  border-bottom: 1px solid	#81b3d2; }
+
+.footer {
+  text-align: center;
+  margin-top: 35px; }
+
+.footer__tags {
+  font-family: "pt sans";
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 35px; }
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.footer__item {
+  width: 45px;
+  height: 48px;
+  display: inline-block;
+  background-color: #81b3d2;
+  margin-right: 3px; }
+
+.footer__link {
+  display: block;
+  width: 45px;
+  height: 48px; }
+
+.footer__link--tw {
+  background-image: url("../../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.footer__link--fb {
+  background-image: url("../../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.footer__link--youtube {
+  background-image: url("../../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.footer__copy {
+  display: inline-block;
+  margin-top: 45px; }
+
+.footer__copy--text {
+  font-size: 13px;
+  padding-right: 40px;
+  padding-top: 20px;
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 100px 0px; }
