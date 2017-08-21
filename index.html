@@ -14,8 +14,8 @@
 							<ul class="nav__list">
 									<li class="nav__item"><a class="nav__link" href="#">главная</a></li>
 									<li class="nav__item"><a class="nav__link" href="#">фото и видео</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">форма отзыва</a></li>
-									<li class="nav__item"><a class="nav__link" href="#">academy</a></li>
+									<li class="nav__item "><a class="nav__link" href="#">форма отзыва</a></li>
+									<li class="nav__item "><a class="nav__link" href="#">academy</a></li>
 							</ul>	
 							<div class="nav__logo">
 								<picture>					
@@ -44,9 +44,10 @@
 									<p class="main-content__blue--text">седона не атракцион для туристов,тем течет своя жизнь</p>							
 						</div>
 						<figure class="main-content--image">
-										<picture>
-												<img src="img/photo-city-mobile@1x.jpg" alt="alt" height="260" width="320">
-										</picture>
+									<picture>
+										<source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg ">
+										<img src="img/photo-city-mobile@1x.jpg" alt="alt" height="260" width="320">
+									</picture>
 							</figure>
 					</div>
 					<div class="content-advantages">
@@ -74,9 +75,9 @@
 									<p class="main-content__blue--number">— №2 —</p>
 									<p class="main-content__blue--text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>							
 							</div>
-							<figure class="main-content--image">
+							<figure class="main-content--image main-content--order">
 										<picture>
-												<img src="img/photo-bridge-mobile@1x.jpg" alt="alt">
+											<img src="img/photo-bridge-mobile@1x.jpg" alt="photo">
 										</picture>
 							</figure>
 					</div>
@@ -106,8 +107,8 @@
 					</div>
 					<div class="map">
 							<picture>
-								
-								<img src="img/bg-map-mobile@1x.jpg" alt="map">						
+								<source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+								<img src="img/bg-map-mobile@1x.jpg" alt="map">
 							</picture>												
 					</div>
 			</div>
