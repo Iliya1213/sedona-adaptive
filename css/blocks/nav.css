@@ -1,0 +1,113 @@
+.nav {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.nav__item {
+  font-size: 18px;
+  text-align: center;
+  background: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  width: 100%; }
+
+.nav__link {
+  text-decoration: none;
+  padding: 20px 40px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-family: pt sans; }
+
+.nav__logo {
+  text-align: center; }
+
+.nav__toggle {
+  position: absolute;
+  right: 11px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  outline: none; }
+
+.closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  right: 9px;
+  bottom: 28px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  -webkit-box-shadow: 0 8.5px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+          box-shadow: 0 8.5px 0 0 #81b3d2, 0 17px 0 0 #81b3d2;
+  outline: none;
+  border: none; }
+
+.opened .nav__toggle::before,
+.opened .nav__toggle::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  width: 29px;
+  height: 4px;
+  background-color: white; }
+
+.opened .nav__toggle::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.opened .nav__toggle::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.opened .nav__toggle {
+  right: 10px;
+  top: 6px;
+  background-color: #81b3d2; }
+
+@media only screen and (max-width: 767px) {
+  .closed .nav__item {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .nav__toggle {
+    display: none; }
+  .nav__item {
+    background-color: white;
+    border-bottom: none;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto; }
+  .nav__link {
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+    padding-top: 20px; }
+  .nav__item a:nth-child(1) {
+    width: 73px;
+    padding-right: 23px; }
+  .nav__item:nth-child(2) a {
+    width: 100px;
+    margin-right: 141px; }
+  .nav__item:nth-child(3) a {
+    width: 105px; }
+  .nav__item:nth-child(4) a {
+    width: 60px; }
+  .nav__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; } }

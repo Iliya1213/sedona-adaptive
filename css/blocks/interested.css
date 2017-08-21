@@ -1,0 +1,33 @@
+.interested {
+  text-align: center;
+  margin-bottom: 66px; }
+
+.interested--title {
+  font-family: "PT sans";
+  font-size: 21px;
+  padding-top: 11px; }
+
+.interesed--text {
+  padding: 0 25px;
+  line-height: 2;
+  font-size: 13px;
+  margin-bottom: 48px; }
+
+.interesed--link {
+  font-family: "PT sans";
+  font-size: 21px;
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #fff;
+  padding: 15px 47px;
+  border-bottom: 1px solid	#81b3d2; }
+
+@media only screen and (min-width: 768px) {
+  .interested--title {
+    padding-top: 25px;
+    font-size: 30px; }
+  .interesed--text {
+    padding: 0	164px;
+    margin-bottom: 55px; }
+  .interesed--link {
+    padding: 15px 136px; } }
